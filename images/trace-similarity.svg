@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
+    Invariance par similarité
+  </text>
+  
+  <!-- Matrix A -->
+  <rect x="20" y="70" width="80" height="80" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="60" y="60" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">A</text>
+  
+  <!-- Matrix P -->
+  <rect x="160" y="70" width="80" height="80" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="200" y="60" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">P</text>
+  
+  <!-- Matrix P^-1 -->
+  <rect x="160" y="170" width="80" height="80" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="200" y="260" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">P⁻¹</text>
+  
+  <!-- Matrix B -->
+  <rect x="300" y="120" width="80" height="80" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="340" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">B = P⁻¹AP</text>
+  
+  <!-- Arrows -->
+  <line x1="110" y1="110" x2="150" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="250" y1="110" x2="290" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="250" y1="210" x2="290" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Trace equality -->
+  <rect x="50" y="170" width="300" height="80" fill="#e6f7ff" stroke="#4a69bd" stroke-width="2" rx="10" ry="10" />
+  <text x="200" y="200" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">tr(P⁻¹AP) = tr(A)</text>
+  <text x="200" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">La trace est invariante par changement de base</text>
+  
+  <!-- Example Values in Matrices -->
+  <text x="60" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">tr(A) = 7</text>
+  <text x="340" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">tr(B) = 7</text>
+</svg>
