@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="340" viewBox="0 0 400 340">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" />
+      <feOffset dx="2" dy="2" />
+    </filter>
+  </defs>
+  
+  <!-- Background Rectangle -->
+  <rect x="0" y="0" width="400" height="340" fill="#f9f9f9" />
+  
+  <!-- Matrix A -->
+  <rect x="40" y="70" width="120" height="120" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="100" y="50" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333333">Matrice A</text>
+  
+  <!-- Diagonalization Illustration -->
+  <text x="200" y="130" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333333">→</text>
+  
+  <!-- Diagonal Matrix -->
+  <rect x="240" y="70" width="120" height="120" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="300" y="50" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333333">Valeurs propres</text>
+  
+  <!-- Matrix Content -->
+  <text x="70" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₁₁</text>
+  <text x="100" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₁₂</text>
+  <text x="130" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₁₃</text>
+  
+  <text x="70" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₂₁</text>
+  <text x="100" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₂₂</text>
+  <text x="130" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₂₃</text>
+  
+  <text x="70" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₃₁</text>
+  <text x="100" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₃₂</text>
+  <text x="130" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">a₃₃</text>
+  
+  <!-- Eigenvalues in Diagonal Matrix -->
+  <circle cx="270" cy="100" r="20" fill="#ff6b6b" opacity="0.7" />
+  <circle cx="300" cy="130" r="20" fill="#ff6b6b" opacity="0.7" />
+  <circle cx="330" cy="160" r="20" fill="#ff6b6b" opacity="0.7" />
+  
+  <text x="270" y="105" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">λ₁</text>
+  <text x="300" y="135" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">λ₂</text>
+  <text x="330" y="165" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333333">λ₃</text>
+  
+  <!-- Zero elements in diagonal matrix -->
+  <text x="300" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  <text x="330" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  <text x="270" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  <text x="330" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  <text x="270" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  <text x="300" y="165" font-family="Arial" font-size="14" text-anchor="middle" fill="#999999">0</text>
+  
+  <!-- Trace Relationship -->
+  <rect x="40" y="220" width="320" height="80" fill="#e6f7ff" stroke="#4a69bd" stroke-width="2" rx="10" ry="10" />
+  <text x="200" y="255" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">tr(A) = λ₁ + λ₂ + λ₃</text>
+  <text x="200" y="285" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">La trace est égale à la somme des valeurs propres</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333333">Trace et Valeurs Propres</text>
+</svg>
