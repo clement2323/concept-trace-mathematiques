@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="350" viewBox="0 0 400 350">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="350" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">
+    Application en géométrie
+  </text>
+  
+  <!-- 3D Sphere (simplified) -->
+  <ellipse cx="200" cy="150" rx="120" ry="90" fill="#ffffff" stroke="#333333" stroke-width="2" />
+  
+  <!-- Elliptical curves on sphere -->
+  <ellipse cx="200" cy="150" rx="80" ry="60" fill="none" stroke="#4a69bd" stroke-width="2" stroke-dasharray="5,3" />
+  <ellipse cx="200" cy="150" rx="40" ry="30" fill="none" stroke="#4a69bd" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Curvature tensor (Symbolic) -->
+  <rect x="20" y="250" width="160" height="80" fill="#ffffff" stroke="#333333" stroke-width="2" rx="5" ry="5" />
+  <text x="100" y="240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">Tenseur de Ricci</text>
+  
+  <text x="55" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₁₁</text>
+  <text x="100" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₁₂</text>
+  <text x="145" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₁₃</text>
+  
+  <text x="55" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₂₁</text>
+  <text x="100" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₂₂</text>
+  <text x="145" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">R₂₃</text>
+  
+  <!-- Trace Operation -->
+  <line x1="190" y1="290" x2="220" y2="290" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="205" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">tr</text>
+  
+  <!-- Arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Scalar Curvature -->
+  <rect x="230" y="265" width="150" height="50" fill="#e6f7ff" stroke="#4a69bd" stroke-width="2" rx="5" ry="5" />
+  <text x="305" y="295" font-family="Arial" font-size="16" text-anchor="middle" fill="#333333">R = tr(Rᵢⱼ) = R₁₁ + R₂₂</text>
+  
+  <!-- Visual elements on sphere -->
+  <circle cx="200" cy="150" r="5" fill="#ff6b6b" />
+  <text x="210" y="145" font-family="Arial" font-size="12" fill="#333333">Point P</text>
+  
+  <path d="M 200,150 Q 230,130 260,110" fill="none" stroke="#ff6b6b" stroke-width="2" />
+  <text x="255" y="105" font-family="Arial" font-size="12" fill="#333333">Courbure</text>
+  
+  <!-- Explanation -->
+  <text x="200" y="65" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">
+    En relativité générale, la trace du tenseur de Ricci
+  </text>
+  <text x="200" y="85" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">
+    donne la courbure scalaire, une mesure fondamentale
+  </text>
+</svg>
